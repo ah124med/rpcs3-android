@@ -51,7 +51,7 @@ fun SettingsItem(item: String, onClick: () -> Unit = { }) {
 
 @Composable
 fun SettingsScreen() {
-    val items = mutableListOf("Install Firmware", "Install custom driver")
+    val item == ("Install Firmware", "Install custom driver")
 
     for (i in 0..10) {
         items += i.toString()
@@ -81,7 +81,7 @@ fun SettingsScreen() {
         ) {
             items.forEach { item ->
                 SettingsItem(item) {
-                    if (item == "Install Firmware") {
+                    if (item == "Install Firmware" , "Install custom driver") {
                         pickFileLauncher.launch("*/*")
                     }
                 }
