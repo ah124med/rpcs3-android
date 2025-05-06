@@ -138,3 +138,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     3rdparty::zlib
     3rdparty::fusion
 )
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -march=armv8-a -mtune=cortex-a710 -fvectorize -funroll-loops -ffast-math")
+)
